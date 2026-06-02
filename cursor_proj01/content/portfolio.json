@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "title": "品牌識別專案",
+      "description": "Logo 設計與視覺識別系統，涵蓋名片、信紙與社群素材。",
+      "tags": ["branding", "print"],
+      "image": "images/portfolio/sample-brand.svg",
+      "url": "",
+      "featured": true,
+      "order": 1
+    },
+    {
+      "title": "電商 Landing Page",
+      "description": "響應式一頁式銷售頁，著重轉換率與行動版體驗。",
+      "tags": ["web", "ui"],
+      "image": "images/portfolio/sample-web.svg",
+      "url": "https://example.com",
+      "featured": true,
+      "order": 2
+    },
+    {
+      "title": "攝影系列：城市光影",
+      "description": "街拍與建築攝影，探索光影與幾何構圖。",
+      "tags": ["photography"],
+      "image": "images/portfolio/sample-photo.svg",
+      "url": "",
+      "featured": false,
+      "order": 3
+    },
+    {
+      "title": "App UI 設計稿",
+      "description": "健康管理 App 的主要流程與元件庫。",
+      "tags": ["ui", "mobile"],
+      "image": "images/portfolio/sample-app.svg",
+      "url": "",
+      "featured": false,
+      "order": 4
+    }
+  ]
+}

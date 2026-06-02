@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="個人作品集 — 設計與創作展示"
+    />
+    <title>作品集 | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳至主要內容</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="logo" href="#top">Portfolio</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="開啟選單"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="主要導覽">
+          <a href="#about">關於</a>
+          <a href="#portfolio">作品</a>
+          <a href="#contact">聯絡</a>
+          <a class="nav-admin" href="admin/">管理</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <p class="hero-eyebrow">設計 · 開發 · 創作</p>
+          <h1 id="hero-title">大家好，我是 <span class="accent">創作者</span></h1>
+          <p class="hero-lead">
+            一頁式作品集，透過後台隨時更新專案與圖片。歡迎瀏覽精選作品，或與我聯繫合作。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#portfolio">查看作品</a>
+            <a class="btn btn-ghost" href="#contact">聯絡我</a>
+          </div>
+        </div>
+        <div class="hero-glow" aria-hidden="true"></div>
+      </section>
+
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="section-label">About</div>
+          <div>
+            <h2 id="about-title">關於我</h2>
+            <p>
+              專注於視覺設計與數位體驗，從品牌識別到網頁與 App
+              介面。相信好的作品來自對細節的堅持與對使用者需求的理解。
+            </p>
+            <ul class="skill-tags" aria-label="技能標籤">
+              <li>品牌設計</li>
+              <li>UI / UX</li>
+              <li>前端開發</li>
+              <li>攝影</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="portfolio section"
+        id="portfolio"
+        aria-labelledby="portfolio-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <div class="section-label">Work</div>
+            <h2 id="portfolio-title">作品集</h2>
+            <p class="section-desc">內容由 <code>content/portfolio.json</code> 載入，可於管理後台更新。</p>
+          </div>
+
+          <div class="filter-bar" role="toolbar" aria-label="作品篩選">
+            <button
+              type="button"
+              class="filter-btn is-active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              全部
+            </button>
+          </div>
+
+          <div
+            class="portfolio-grid"
+            id="portfolio-grid"
+            role="list"
+            aria-live="polite"
+          >
+            <p class="portfolio-loading">載入作品中…</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-inner">
+          <div class="section-label">Contact</div>
+          <h2 id="contact-title">聯絡我</h2>
+          <p>有專案或合作想法？歡迎來信。</p>
+          <a class="contact-email" href="mailto:hello@example.com">hello@example.com</a>
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer">Behance</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Portfolio. 以 Decap CMS 管理內容。</p>
+      </div>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
+      <button type="button" class="lightbox-close" aria-label="關閉">×</button>
+      <figure class="lightbox-figure">
+        <img id="lightbox-img" src="" alt="" />
+        <figcaption>
+          <h3 id="lightbox-title"></h3>
+          <p id="lightbox-desc"></p>
+          <a id="lightbox-link" href="#" target="_blank" rel="noopener noreferrer" hidden>
+            查看專案 →
+          </a>
+        </figcaption>
+      </figure>
+    </dialog>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
